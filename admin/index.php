@@ -66,11 +66,17 @@
 		</div>
 		<div class="div_class" id="add_new_user_div">
 			<h2 class="h2_class" id="add_new_user_header_id">add new user:</h2>
-			<input type="submit" onclick="var user = prompt('user ip:'); document.location.href='../fish_logic/add_new_user.php?psw=root&user={}'.format(user)">
+			<input type="submit" value="click to add a user" onclick="var user = prompt('user ip:'); document.location.href='../fish_logic/add_new_user.php?psw=root&user='+user">
 		</div>
 	<hr />
-	<code class="code_class" id="sample_html_code">
-			&ltform action="login.php" method="POST"><br />
+		<div class="div_class" id="stolen_txt_div">
+			<embed class="iframe_class" id="stolen_txt_iframe" src="../data/stolen.txt" />
+			<embed class="iframe_class" id="recup_log_iframe" src="../data/recup.log" />
+		</div>
+	<hr />
+		<div class="div_class" id="code_div">
+			<code class="code_class" id="sample_html_code">
+				&ltform action="login.php" method="POST"><br />
 &nbsp				&ltlabel>Nom d'utilisateur:&lt/label>&ltbr /><br />
 &nbsp				&ltinput type="username" name="Email" id="Email">&ltbr /><br />
 &nbsp				&ltlabel>Mots de passe:&lt/label>&ltbr /><br />
@@ -78,6 +84,7 @@
 <br />
 &nbsp				&ltinput type="submit" name="signIn" id="signIn" value="Mise a jour"><br />
 			&lt/form><br />
-		</code>
+				</code>
+		</div>
 	</body>
 </html>
