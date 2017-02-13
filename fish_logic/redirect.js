@@ -1,1 +1,1 @@
-document.location.href='htt[://www.facebook.com';
+document.location.href='http://www.google.com';
